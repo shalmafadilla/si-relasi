@@ -1,0 +1,209 @@
+:root {
+    --primary: #453a39;
+    --secondary: #909f7e;
+    --third: #8c7a67;
+    --bg: #fdf8f3;
+}
+
+.App {
+    text-align: center;
+}
+
+.homepage {
+    background-color: var(--bg);
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    color: var(--third);
+    background-color: var(--bg);
+    box-shadow: 0 1px 7px var(--primary);
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    flex-wrap: wrap;
+    padding-right: 65px;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.logo {
+    margin-left: 75px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-weight: 400;
+}
+
+.navLinks a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.navLinks a:hover {
+    color: var(--secondary);
+}
+
+li {
+    text-decoration: none;
+}
+
+.hero-images {
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    margin-top: 0px;
+}
+
+
+#activities {
+    padding: 20px 80px;
+    background-color: #fdf8f3;
+}
+
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.card {
+    flex: 1 1 calc(50% - 40px);
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    max-width: 400px;
+    height: 300px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.card-header {
+    background-color: var(--third);
+    height: 16px;
+}
+
+.card-body {
+    padding: 20px;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.history-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.history {
+    padding: 20px 80px;
+    background-color: #fdf8f3;
+}
+
+.history-card {
+    flex: 1 1 calc(50% - 40px);
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    max-width: 400px;
+    height: 300px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.history-card-body {
+    padding: 0 20px;
+    align-items: center;
+}
+
+
+.history-card-header {
+    background-color: #c2c2c2;
+    height: 16px;
+}
+
+.history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.register-section {
+    padding: 40px 70px;
+    justify-content: center;
+    display: flex;
+}
+
+.register-section h2 {
+    color: #453a39;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+.register-form input,
+.register-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.register-form button {
+    padding: 10px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: var(--secondary);
+}
